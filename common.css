@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/* リセットcss */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family:
+    "游ゴシック体", YuGothic,
+		"メイリオ", Meiryo,
+		"ヒラギノ角ゴ Pro W3",
+		"HIragino Kaku Gothic Pro W3",
+		"HIragino Kaku Gothic Pro",
+		Osaka,
+		"ＭＳ Ｐゴシック", "MS P Gothic",
+    sans-serif;
+    color: #9c9c9c;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* リセットcss */
+
+body{
+  width: 100%;
+  margin: 0;
+}
+
+.top-section{
+height: 708px;
+z-index: 100;
+position: relative;
+}
+
+.tag{
+  margin: 0 0 0 190px;
+  position: relative;
+}
+
+.tag img{
+  width: 130px;
+}
+
+.sp{
+  display: none;
+}
+
+h1{
+  margin: 0;
+}
+
+h1 img{
+  width: 100%;
+}
+
+.top-background{
+  margin: 0;
+  width: 940px;
+  float: right;
+  margin-top: 40px;
+}
+
+.top-background img{
+  width: 100%;
+}
+
+.background-nav-wrap{
+  height: 386px;
+}
+
+.background-nav-yellow{
+  position: relative;
+}
+
+.groval-nav{
+  background: #ffef99;
+  position: absolute;
+  margin: 0 40px 0px 353px;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  width: 700px;
+  bottom: -327px;
+  z-index: 10;
+}
+
+.background-nav-gray{
+  background: #d4d4d4;
+  height: 127px;
+  position: absolute;
+  margin: 0 40px 0px 354px;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  width: 710px;
+  bottom: -340px;
+  z-index: 0;
+}
+
+.groval-nav li{
+  width: 30%;
+  text-align: center;
+}
+
+.circle{
+  background: #fff;
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 20px;
+}
+
+.profile{
+  width: 80%;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+  background: #fff;
+}
+
+.profile-image img{
+  width: 700px;
+  top: 70px;
+  position: relative;
+}
+
+h2{
+  font-size: 34px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+h3{
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+
+.common-text{
+  font-size: 15px;
+  padding-bottom: 40px;
+  line-height: 24px;
+  z-index: 30;
+}
+
+.skill{
+  position: relative;
+  z-index: 0;
+  margin-top: 150px;
+}
+
+.skill-image{
+  margin-left: 270px;
+  position: absolute;
+  top: -180px;
+  z-index: 0;
+}
+
+.skill-image img{
+  width: 230px;
+}
+
+.background-shadow{
+  padding: 60px;
+  margin-left: 330px;
+  box-shadow: 2px 2px 14px gainsboro;
+  z-index: 20;
+  position: relative;
+  background: #fff;
+}
+
+.skill-background-yellow{
+  position: absolute;
+  background: #ffef99;
+  height: 1080px;
+  width: 40%;
+  top: -120px;
+  right: 0;
+  z-index: 0;
+}
+
+.skill-background-gray{
+  background: #d4d4d4;
+  position: absolute;
+  height: 1080px;
+  width: 40%;
+  top: -60px;
+  right: 70px;
+  z-index: 0;
+}
+
+.evaluation{
+  line-height: 40px;
+}
+
+.evaluation span{
+  color: #ffef99;
+  font-size: 15px;
+}
+
+.work-background-shadow{
+  padding: 114px 80px 114px 184px ;
+  margin: 0;
+  margin-top: 110px;
+  margin-right: 330px;
+  width: 60%;
+}
+
+.design{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 180px;
+}
+
+.design-image img{
+  width: 100%;
+}
+
+.box-wrap{
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box{
+  margin-top:34px;
+  object-position: 0% 12%;
+  height: 200px;
+  width: 32%;
+}
+
+.box img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0% 12%;
+}
+
+footer{
+  position: relative;
+  background: #ffef99;
+  height: 240px;
+  margin-top: 80px;
+}
+
+.footer-image{
+  position: absolute;
+  top: -182px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-image img{
+  margin: 0 auto;
+  width: 224px;
+}
+
+.fotter-icon{
+  float: right;
+  top: 200px;
+  margin: 160px 64px 0 0;
+}
+
+.fotter-icon span{
+  margin-left: 8px;
+}
+
+.fotter-icon span img{
+  width: 17px;
+}
+
+/* 詳細ページ */
+
+/* pc */
+
+.content-section-down h2 {
+  text-align: center;
+}
+
+.content-section-down .common-text{
+  text-align: center;
+}
+
+.design_box{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.design_box img{
+  width: 100%;
+  padding-bottom:30px; 
+}
+
+/* SP */
+
+
+
+
+
+
+@media screen and (max-width:600px){
+  .sp{
+    display: block;
+  }
+
+  .pc{
+    display: none;
+  }
+
+  .top-section{
+    height: 414px;
+  }
+
+  .tag{
+    margin: 0 0 0 10px;
+  }
+
+  .tag img{
+    width: 78px;
+  }
+
+  h1 img{
+    width: 275px;
+    margin: 0 auto;
+  }
+
+  .top-background{
+    width: 100%;
+  }
+
+  .top-background img{
+    display: none;
+  }
+
+  .background-nav-yellow{
+    position: relative;
+    width: 100%;
+  }
+
+  .groval-nav{
+
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0;
+    text-align: center;
+    bottom: -237px;
+    width: 93%;
+    padding: 20px;
+  }
+
+  .background-nav-gray{
+    display: none;
+  }
+
+  .profile {
+    width: 80%;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+    background: #fff;
+  }
+
+  .skill-image{
+    margin: 0;
+  }
+
+  .skill-background-yellow{
+    height: 100px;
+  }
+
+  .skill-background-gray{
+    height: 100px;
+  }
+
+  .profile-image img{
+    width: 390px;
+    top:0;
+  }
+
+  .background-shadow{
+    margin: 0;
+    box-shadow: none;
+    padding: 60px;
+    width: 80%;
+  }
+
+  .box-wrap{
+    width: 85%;
+  }
+
+  .design_img{
+    width: 47%;
+    height: 110px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 12%;
+  }
+
+  .content-section-down h2 {
+    text-align: left;
+  }
+  
+  .content-section-down .common-text{
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .design_box{
+    width: 100%;
+  }
+  
+  .design_box img{
+    height: auto;
+    width: 100%;
+    padding-bottom:30px; 
+  }
+
+}
