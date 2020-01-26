@@ -330,9 +330,11 @@ footer{
   padding-bottom:30px; 
 }
 
-/* SP */
-
-
+.content-section-down .common-text{
+  width: 480px;
+  margin: 0 auto;
+  font-size: 13px;
+}
 
 
 
