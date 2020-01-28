@@ -5,6 +5,27 @@
     <link rel="stylesheet" href="common.css">
     <meta name=“viewport“ content=“width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0“>
     <title>中村佳代のportfolio</title>
+    <!-- jQuery.jsの読み込み -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script>
+      // <!-- スムーズスクロール部分の記述 -->
+      $(function(){
+        // #で始まるアンカーをクリックした場合に処理
+        $('a[href^=#]').click(function() {
+            // スクロールの速度
+            var speed = 400; // ミリ秒
+            // アンカーの値取得
+            var href= $(this).attr("href");
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+        });
+      });
+    </script>
   </head>
   <body>
     <section class="top-section">
@@ -15,33 +36,13 @@
         <img src="image/top-title.png" alt="ページタイトル" class="pc">
         <img src="image/sp/top-title.png" alt="ページタイトル" class="sp">
       </h1>
-      <div class="background-nav-wrap">
+      <div class="background-nav-wrap pc">
         <p class="top-background"><img src="image/top-background.png" alt="背景素材"></p>
-        <div class="background-nav-yellow">
-          <ul class="groval-nav">
-            <li class="nav-item">
-              <p class="circle"></p>
-              <p>Profile</p>
-            </li>
-            <li class="nav-item">
-              <p class="circle"></p>
-              <p>Skill</p>
-            </li>
-            <li class="nav-item">
-              <p class="circle"></p>
-              <p>Work</p>
-            </li>
-            <li class="nav-item">
-              <p class="circle"></p>
-              <p>Work</p>
-            </li>
-          </ul>
-          <p class="background-nav-gray"></p>
-        </div>
+        <p class="background-nav-gray"></p>
       </div>
     </section>
     <div class="content-section">
-      <section class="profile">
+      <section class="profile" id="sec1">
   　　   <p class="profile-image">
           <img src="image/profile-image.png">
         </p>
@@ -57,7 +58,7 @@
           <br>そのため、経験値を積み、自分も会社も豊かになれたらと思いながら生きています。
         </p>
       </section>
-      <section class="skill">
+      <section class="skill" id="sec2">
   　　   <p class="skill-image">
           <img src="image/skill-image.png">
         </p>
@@ -83,7 +84,7 @@
         <p class="skill-background-yellow"></p>
         <p class="skill-background-gray"></p>
       </section>
-      <section class="work">
+      <section class="work" id="sec3">
         <div class="background-shadow work-background-shadow">
         <h2>Work</h2>
         <h3>どんな風に仕事をするの？？</h3>
@@ -96,13 +97,12 @@
             KPIが設けられている場合、通常業務を進めつつ、自分の課題の数字も届くように努力します。<br>
             入社して２ヶ月でCVRとクリエイティブ共に優秀であった人に送られる<br>「社内クリエイティブ賞」をWEBディレクター
             としていただくなど、<br>活発にアグレッシブに作業は進める傾向にあります。<br><br>
-            デザイナーの方とも連携して制作をしていく中で、自分の我を出すことはあまりせず、<br>
-            相手の意見を受け入れつつ進めていくことが好きです。<br><br>
+            デザイナーの方とも連携して制作をしていく中で、相手の意見を受け入れつつ進めていくことが好きです。<br><br>
             人と会話をして、新しい発見や自分の成長に繋がると思うので、協力プレーの仕事が比較的好きです。
         </p>
       </div>
       </section>
-      <section class="design">
+      <section class="design" id="sec4">
         <p class="design-image"><img src="image/design-image.png"></p>
         <h2>Design</h2>
         <h3>どんなデザインを作るの？</h3>
@@ -114,8 +114,48 @@
           <li class="box"><a href="design/05.html"><img src="image/b01.jpg" class="design_img"><p class="design_img"></p></a></li>
           <li class="box"><a href="design/06.html"><img src="image/ビビアップ.png" class="design_img"><p class="design_img"></p></a></li>
         </ul>
+        <p class="design-image direction-image"><img src="image/design-image.png"></p>
+        <h2>Direction</h2>
+        <h3>どんなディレクションをするの？</h3>
+        <ul class="box-wrap">
+          <li class="box"><a href="design/01.html"><img src="image/ブロードワイマックス.png" class="design_img"><p class="design_img"></a></li>
+          <li class="box"><a href="design/02.html"><img src="image/機種変更.png" class="design_img"><p class="design_img"></p></a></li>
+          <li class="box"><a href="design/03.html"><img src="image/どんふぁい.png" class="design_img"><p class="design_img"></p></a></li>
+          <li class="box"><a href="design/04.html"><img src="image/ネクモバ.png" class="design_img"><p class="design_img"></p></a></li>
+          <li class="box"><a href="design/05.html"><img src="image/テアトルアカデミー.png" class="design_img"><p class="design_img"></p></a></li>
+          <li class="box"><a href="design/06.html"><img src="image/ライスフォース.png" class="design_img"><p class="design_img"></p></a></li>
+          <li class="box"><a href="design/06.html"><img src="image/ドモ.png" class="design_img"><p class="design_img"></p></a></li>
+        </ul>
       </section>
     </div>
+    <nav class="sp">
+        <ul class="groval-nav">
+          <li class="nav-item">
+            <a href="#sec1">
+              <p class="circle"><img src="image/profile.svg"></p>
+              <p class="nav-item-text">Profile</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sec2">
+              <p class="circle"><img src="image/skill.svg"></p>
+              <p class="nav-item-text">Skill</p>
+            </a>
+          </li>
+          <li class="nav-item" >
+            <a href="#sec3">
+              <p class="circle"><img src="image/work.svg"></p>
+              <p class="nav-item-text">Work</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sec4">
+              <p class="circle"><img src="image/design.svg"></p>
+              <p class="nav-item-text">Design</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
     <footer>
       <p class="footer-image">
         <img src="image/footer-img.png" alt="フッターイメージ">

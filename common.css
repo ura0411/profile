@@ -66,7 +66,7 @@ body{
 }
 
 .top-section{
-height: 708px;
+height: 328px;
 z-index: 100;
 position: relative;
 }
@@ -93,6 +93,7 @@ h1 img{
 }
 
 .top-background{
+  display: none;
   margin: 0;
   width: 940px;
   float: right;
@@ -104,11 +105,7 @@ h1 img{
 }
 
 .background-nav-wrap{
-  height: 386px;
-}
-
-.background-nav-yellow{
-  position: relative;
+  height: 6px;
 }
 
 .groval-nav{
@@ -119,33 +116,52 @@ h1 img{
   border-radius: 20px;
   display: flex;
   width: 700px;
-  bottom: -327px;
+  bottom: 93px;
   z-index: 10;
 }
 
 .background-nav-gray{
+  display: none;
   background: #d4d4d4;
   height: 127px;
   position: absolute;
   margin: 0 40px 0px 354px;
   padding: 30px;
   border-radius: 30px;
-  display: flex;
   width: 710px;
-  bottom: -340px;
+  bottom: 71px;
   z-index: 0;
 }
 
 .groval-nav li{
   width: 30%;
   text-align: center;
+  cursor: pointer;
+}
+
+.groval-nav a{
+  text-decoration: none;
 }
 
 .circle{
   background: #fff;
   height: 80px;
   width: 80px;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
+  border-radius: 50px;
+}
+
+
+.circle img{
+  height: 45%;
+  padding: 13px;
+}
+
+.nav-item-text{
+  font-size: 13px;
+  top: -34px;
+  position: relative;
+
 }
 
 .profile{
@@ -253,6 +269,10 @@ h3{
   width: 100%;
 }
 
+.direction-image{
+  padding-top: 80px;
+}
+
 .box-wrap{
   width: 880px;
   margin: 0 auto;
@@ -263,7 +283,7 @@ h3{
 
 .box{
   margin-top:34px;
-  object-position: 0% 12%;
+  object-position: 0% 0%;
   height: 200px;
   width: 32%;
 }
@@ -336,6 +356,14 @@ footer{
   font-size: 13px;
 }
 
+.content-section-down h2{
+  line-height: 50px;
+}
+
+.down_tag{
+  margin: 0px 0 20px 190px;
+}
+
 
 
 
@@ -349,7 +377,7 @@ footer{
   }
 
   .top-section{
-    height: 414px;
+    height: 244px;
   }
 
   .tag{
@@ -361,7 +389,7 @@ footer{
   }
 
   h1 img{
-    width: 275px;
+    width: 325px;
     margin: 0 auto;
   }
 
@@ -378,15 +406,20 @@ footer{
     width: 100%;
   }
 
-  .groval-nav{
+  .background-shadow{
+    z-index:0;
+  }
 
+  .groval-nav{
     margin: 0 auto;
     text-align: center;
     border-radius: 0;
     text-align: center;
-    bottom: -237px;
     width: 93%;
     padding: 20px;
+    position: fixed;
+    bottom: 0;
+    height: 75px;
   }
 
   .background-nav-gray{
@@ -399,6 +432,7 @@ footer{
     z-index: 10;
     position: relative;
     background: #fff;
+    scroll-behavior: smooth;
   }
 
   .skill-image{
@@ -438,12 +472,16 @@ footer{
   }
 
   .content-section-down h2 {
-    text-align: left;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
   }
   
   .content-section-down .common-text{
+    font-size: 14px;
+    width: 85%;
     text-align: left;
-    font-size: 18px;
   }
 
   .design_box{
@@ -453,7 +491,6 @@ footer{
   .design_box img{
     height: auto;
     width: 100%;
-    padding-bottom:30px; 
   }
 
 }
