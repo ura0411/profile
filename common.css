@@ -109,7 +109,7 @@ h1 img{
 }
 
 .groval-nav{
-  background: #ffef99;
+  background-color: rgba(255, 227, 32, 0.35);
   position: absolute;
   margin: 0 40px 0px 353px;
   padding: 30px;
@@ -144,7 +144,7 @@ h1 img{
 }
 
 .circle{
-  background: #fff;
+  background: #ffffffbf;
   height: 80px;
   width: 80px;
   margin: 0 auto 10px;
@@ -440,15 +440,19 @@ footer{
   }
 
   .skill-background-yellow{
-    height: 100px;
+    height: 50px;
+    top: -40px;
+    width: 20%;
+    right: 140px;
   }
 
   .skill-background-gray{
+    display: none;
     height: 100px;
   }
 
   .profile-image img{
-    width: 390px;
+    width: 300px;
     top:0;
   }
 
