@@ -24,6 +24,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   font-family:
+    "Noto Sans Japanese",
     "游ゴシック体", YuGothic,
 		"メイリオ", Meiryo,
 		"ヒラギノ角ゴ Pro W3",
@@ -58,6 +59,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 /* リセットcss */
 
 body{
@@ -181,12 +193,11 @@ h1 img{
 h2{
   font-size: 34px;
   font-weight: bold;
-  padding-bottom: 20px;
 }
 
 h3{
   font-size: 15px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   font-weight: bold;
 }
 
@@ -195,6 +206,20 @@ h3{
   padding-bottom: 40px;
   line-height: 24px;
   z-index: 30;
+}
+
+.common-text {
+  width: 100%;
+  color: #9c9c9c;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  margin-top: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .skill{
