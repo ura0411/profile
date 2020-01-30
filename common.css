@@ -197,11 +197,12 @@ h2{
 
 h3{
   font-size: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   font-weight: bold;
 }
 
 .common-text{
+  padding-top:10px;
   font-size: 15px;
   padding-bottom: 40px;
   line-height: 24px;
@@ -367,7 +368,7 @@ footer{
 }
 
 .design_box{
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -489,6 +490,15 @@ footer{
     width: 76%;
   }
 
+  .box{
+    width: 47%;
+    height: 110px;
+  }
+
+  .box img{
+    height: auto
+  }
+
   .box-wrap{
     width: 85%;
   }
@@ -515,7 +525,7 @@ footer{
   }
 
   .design_box{
-    width: 100%;
+    width: 90%;
   }
   
   .design_box img{
