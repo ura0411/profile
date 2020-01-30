@@ -191,11 +191,11 @@ h1 img{
 
 h2{
   font-size: 34px;
-  font-size: 44px;
+  /* font-size: 44px; */
   font-weight: bold;
-  font-family: "PxGroteskRegular",neue-haas-grotesk-display,Helvetica,Arial,sans-serif;
+  /* font-family: "PxGroteskRegular",neue-haas-grotesk-display,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  color: #a2a2a2;
+  color: #a2a2a2; */
 }
 
 h3{
